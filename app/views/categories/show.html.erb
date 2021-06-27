@@ -4,7 +4,7 @@
 <h3><%= pluralize(@category.posts.count, 'Posts') %></h3>
 
 <ul>
-    <% category.posts.each do |post|%>
+    <% @category.posts.each do |post|%>
         <li><%= link_to post.title, post_path(post) %></li>
     <% end %>
 </ul>
